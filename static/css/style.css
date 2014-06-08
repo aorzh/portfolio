@@ -1,0 +1,11 @@
+
+body {
+    /*background-image: url("/static/img/bkg.gif");*/
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.wrap {
+    background-color: #FFFFFF;
+   // opacity: 0.5;
+    background-size: 100% auto;
+}

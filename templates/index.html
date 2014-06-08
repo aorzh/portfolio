@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>My projects</h2>
+    {% for project in projects %}
+        <div>{{ project.title }}</div>
+        {% if project.image %}
+            <div>
+           {% load cropping %}
+           <img src="{% cropped_thumbnail project "cropping" %}" width="350">
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
